@@ -50,10 +50,10 @@ def gameStart():
         snake.forward(snake_speed)
         if snake.distance(food) < 20:
             placeFood()
-            snake_length = snake_length + 1
+            snake_length += 1
             snake.shapesize(1, snake_length, 1)
-            snake_speed = snake_speed + 1
-            points = points + 10
+            snake_speed += 1
+            points += 10
             showPoints(points)
         if outsideWindow():
             gameEnd()
